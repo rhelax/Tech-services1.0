@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <script src="https://kit.fontawesome.com/ab3ce87f92.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="container-fluid no-padding">
+        <!--menu-->
+        <header>
+        <div id="contacto">
+            <div class="row start-lg middle-lg center-xs">
+                <div class="col-xs-1 col-lg-10">
+                </div>
+                <div class="col-xs-4 col-lg-1">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:32-837465">32-837465</a>
+                </div>
+                <div id="caja" class="col-xs-4 col-lg-1">
+                    <a href="contacto.html">CONTACTO</a>
+                </div>
+            </div>
+        </div>    
+        <div class="row start-lg middle-lg center-xs">
+            <div class="col-xs-12 col-lg-6">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div id="hola" class="col-xs-12 col-lg-1">  
+                <a href="index.html">INICIO</a> 
+            </div>
+            <div id="hola" class="col-xs-12 col-lg-1">
+                <a href="#tit-section-b">NOSOTROS</a>
+            </div>
+            <div id="hola" class="col-xs-12 col-lg-1">
+                <a href="calcula.html">CALCULA</a>
+            </div>
+            <div id="hola" class="col-xs-12 col-lg-1">
+                <a href="#">BLOG</a>
+            </div>
+            <div id="hola" class="col-xs-12 col-lg-1">
+                <a href="#tit-section-a">COTIZACIONES</a>
+            </div>
+        </div>
+        </header>
+        <div class="container">
+            <div class="form__top">
+                <h2>Login de <span>Usuario</span></h2>
+            </div>		
+            <form class="form__reg" action="">
+                <input class="input" type="text" id="usuario" placeholder="&#128100;  Usuario" required>
+                <input class="input" type="password" id="contrasena" name="numpiso" placeholder="&#128220;  Contraseña" required>
+            <br>
+                <div class="btn__form">
+                    <input type="button" class="button" value="Iniciar Sesión" id="boton" onclick="login()">	
+                    <input class="btn__reset" type="reset" value="Limpiar">	
+                </div>
+            </form>
+            <div id="error">
+            </div>
+            
+        </div>
+        <footer>
+            <div id="sub-menu" class="row">
+                <div class="col-xs-12 col-lg-2">
+                    <a href="contacto.html"><b>SERVICIO TECNICO</b></a><br>
+                </div>
+                <div class="col-xs-12 col-lg-3">
+                    <a href="#tit-section-b"><b>NOSOTROS</b></a><br>
+                </div>
+                <div class="col-xs-12 col-lg-3">
+                    <a href="calcula.html"><b>HERRAMIENTAS</b></a><br>
+                </div>
+                <div class="col-xs-12 col-lg-3">
+                    <a href="mailto:tech-service@tech.cl"><b>EMAIL: tech-service@tech.cl</b></a><br>
+                </div>
+            </div>
+            <div id="tit-section-c">
+                <a>UBICACION</a>
+                <p><b>_______</b></p>
+            </div>
+            <iframe src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Av. Valparaíso 500-602, Viña del Mar, Valparaíso&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </footer>
+
+        <script src="js/login.js"></script>
+    
+</body>
+</html>
