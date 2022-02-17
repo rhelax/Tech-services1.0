@@ -40,15 +40,69 @@ header{
     height: auto;
     background:#09a680;
 }
-header #hola{
+header #inicio{
     font-size: 20px;
     color: white;
     font-family: Arial;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px;
 }
-#hola a{
+header #nosotros{
+    font-size: 20px;
+    color: white;
+    font-family: Arial;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 15px;
+}
+header #calcula{
+    font-size: 20px;
+    color: white;
+    font-family: Arial;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 30px;
+}
+header #blog{
+    font-size: 20px;
+    color: white;
+    font-family: Arial;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+}
+header #login{
+    font-size: 20px;
+    color: white;
+    font-family: Arial;
+    text-decoration: none;
+    font-weight: bold;
+}
+#inicio a{
+    font-size: 20px;
+    color: white;
+    font-family: Arial;
+    text-decoration: none;
+}
+#nosotros a{
+    font-size: 20px;
+    color: white;
+    font-family: Arial;
+    text-decoration: none;
+}
+#calcula a{
+    font-size: 20px;
+    color: white;
+    font-family: Arial;
+    text-decoration: none;
+}
+#blog a{
+    font-size: 20px;
+    color: white;
+    font-family: Arial;
+    text-decoration: none;
+}
+#login a{
     font-size: 20px;
     color: white;
     font-family: Arial;
