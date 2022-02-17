@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -8,14 +8,6 @@
 
 .no-padding{
     padding: 0 !important;
-}
-.container {
-	max-width: 450px;
-	height: auto;
-	background-color: #EFEFEF;
-	margin: 5% auto;
-	padding-bottom: 1rem;
-	
 }
 #contacto{
     width: 100%;
@@ -39,78 +31,17 @@ header{
     width: 100%;
     height: auto;
     background:#09a680;
+    text-align: center;
 }
-header #inicio{
+
+header a{
     font-size: 20px;
     color: white;
     font-family: Arial;
     text-decoration: none;
     font-weight: bold;
 }
-header #nosotros{
-    font-size: 20px;
-    color: white;
-    font-family: Arial;
-    text-decoration: none;
-    font-weight: bold;
-    padding-left: 15px;
-}
-header #calcula{
-    font-size: 20px;
-    color: white;
-    font-family: Arial;
-    text-decoration: none;
-    font-weight: bold;
-    margin-left: 30px;
-}
-header #blog{
-    font-size: 20px;
-    color: white;
-    font-family: Arial;
-    text-decoration: none;
-    font-weight: bold;
-    margin-left: 20px;
-}
-header #login{
-    font-size: 20px;
-    color: white;
-    font-family: Arial;
-    text-decoration: none;
-    font-weight: bold;
-}
-#inicio a{
-    font-size: 20px;
-    color: white;
-    font-family: Arial;
-    text-decoration: none;
-}
-#nosotros a{
-    font-size: 20px;
-    color: white;
-    font-family: Arial;
-    text-decoration: none;
-}
-#calcula a{
-    font-size: 20px;
-    color: white;
-    font-family: Arial;
-    text-decoration: none;
-}
-#blog a{
-    font-size: 20px;
-    color: white;
-    font-family: Arial;
-    text-decoration: none;
-}
-#login a{
-    font-size: 20px;
-    color: white;
-    font-family: Arial;
-    text-decoration: none;
-}
-#hola a:hover{
-    font-size: 22px;
-}
+
 header img{
     width: 10rem;
     border-radius: 40%;
@@ -212,33 +143,32 @@ background-color:#cacaca;
 
 
 
-#separacion1 a1{
+#separacion1 #a1{
     font-family: Arial;
     font-size: 28px;
 }
-#separacion1 a2{
+#separacion1 #a2{
     font-family: Arial;
     font-size: 16px;
     color: #494949;
 }
-#separacion1 a3{
+#separacion1 #a3{
     font-family: Arial;
     font-size: 20px;
     color: #494949;
 
 }
 
-
-#separacion2 a1{
+#separacion2 #a1{
     font-family: Arial;
     font-size: 28px;
 }
-#separacion2 a2{
+#separacion2 #a2{
     font-family: Arial;
     font-size: 16px;
     color: #494949;
 }
-#separacion2 a3{
+#separacion2 #a3{
     font-family: Arial;
     font-size: 20px;
     color: #494949;
