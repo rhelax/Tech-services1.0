@@ -83,21 +83,21 @@ padding:10px;
     padding: 50px;
 }
 
-#cotizaciones #cajas{
+#cotizaciones .cajas{
     padding-top: 20px;
     margin: 1%;
     border: 2px solid #DDDDDD;
     background-color: #EAEAEA;
     border-radius: 10px;
 }
-#cotizaciones #cajas img{
+#cotizaciones .cajas img{
     margin:20px;
     width: 150px;
 }
-#desc {
+.desc {
     padding:0px 0px 0px 40px ;
 }
-#desc a{
+.desc a{
     font-size: 25px;
     text-decoration: none;
     color: black;
@@ -105,7 +105,7 @@ padding:10px;
     font-weight: bold;
     padding-bottom: 30px;
 }
-#desc li{
+.desc li{
     font-size: 20px;
     font-family: Arial;
     padding:5px;
@@ -139,16 +139,16 @@ background-color:#cacaca;
     padding: 30px 0px 30px 30px;
 }
 
-#separacion1 #a1{
+#separacion1 .a1{
     font-family: Arial;
     font-size: 28px;
 }
-#separacion1 #a2{
+#separacion1 .a2{
     font-family: Arial;
     font-size: 16px;
     color: #494949;
 }
-#separacion1 #a3{
+#separacion1 .a3{
     font-family: Arial;
     font-size: 20px;
     color: #494949;
