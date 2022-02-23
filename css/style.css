@@ -1,13 +1,14 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    -webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+div.row{
+margin-right: 0px;
 }
 
-.no-padding{
+div.container-fluid{
+padding-right: 0px;
+}
+
+.container-fluid{
     padding: 0 !important;
+    margin: 0 !important;
 }
 .container {
 	max-width: 450px;
@@ -69,23 +70,21 @@ padding:10px;
 #tit-section-a{
     padding-top: 30px;
     padding-left: 5%;
-
 }
 #tit-section-a a{
     font-size: 40px;
-    text-decoration: none;
+    text-decoration:underline;
     color: black;
     font-family: Arial;
     font-weight: bold;
 }
 #cotizaciones {
     background-color: #fff;
-    padding: 50px;
+    margin: 20px;
 }
 
 #cotizaciones .cajas{
-    padding-top: 20px;
-    margin: 1%;
+    margin: 10px 75px 10px 75px;
     border: 2px solid #DDDDDD;
     background-color: #EAEAEA;
     border-radius: 10px;
@@ -109,6 +108,18 @@ padding:10px;
     font-size: 20px;
     font-family: Arial;
     padding:5px;
+    list-style: none;
+}
+@media(max-width: 991px){
+    #cotizaciones .cajas{
+        margin: 10px 0px 10px 0px;
+        border: 2px solid #DDDDDD;
+        background-color: #EAEAEA;
+        border-radius: 10px;
+        text-align: center;
+    }
+}
+    
 }
 #tit-section-b{
     padding:30px 0px;
@@ -116,10 +127,11 @@ padding:10px;
 }
 #tit-section-b a{
     font-size: 40px;
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
     font-family: Arial;
     font-weight: bold;
+
 }
 .campaB{
     position: relative;
@@ -139,27 +151,18 @@ background-color:#cacaca;
     padding: 30px 0px 30px 30px;
 }
 
-#separacion1 .a1{
-    font-family: Arial;
-    font-size: 28px;
+#separacion1 h4{
+    text-decoration: underline;
 }
-#separacion1 .a2{
-    font-family: Arial;
-    font-size: 16px;
-    color: #494949;
-}
-#separacion1 .a3{
-    font-family: Arial;
-    font-size: 20px;
-    color: #494949;
-
-}
-
-#separacion1 img{
-    
+#separacion1 img{ 
     width: 60%;
     height: 50%;
 }
+#separacion col{
+    text-align: end;
+}
+
+
 
 /*-------formulario General-----------*/
 .form__top {
