@@ -30,7 +30,7 @@ div.container-fluid {
 header {
   width: 100%;
   height: auto;
-  background: #09a680;
+  background: #09A680;
   text-align: center; }
   header a {
     font-size: 20px;
@@ -140,7 +140,7 @@ header {
   width: 100%;
   text-align: center;
   padding: 2rem 0 1rem;
-  border-top: solid .4rem #09A680;
+  border-top: solid 0.4rem #09A680;
   margin-bottom: 1rem; }
   .form__top h2 {
     font-weight: bold;
