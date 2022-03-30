@@ -1,13 +1,10 @@
+@mixin widthpadding($width, $padding){
+	width: $width;
+	padding: $padding;
+}
 div.row {
 	margin-right: 0px;
 }
-
-$styles: (
-    width: 100%,
-    background-color:#09A680,
-    font-family: Arial,
-    text-decoration: none
-);
 div.container-fluid {
 	padding-right: 0px;
 }
@@ -22,38 +19,36 @@ div.container-fluid {
 	margin: 5% auto;
 	padding-bottom: 1rem;
 }
-#contacto{
-    width: map-get($styles, width);
-    background-color: map-get($styles, background-color);
-    padding: 20px 20px 0px 0px;
+#contacto {
+	@include widthpadding(100%, 20px 20px 0px 0px);
+	background-color: #09A680;
 }
-header{
-    width: map-get($styles, width);
-    height: auto;
-    background:map-get($styles, background-color);
-    text-align: center;
-    a{
-        font-size: 20px;
-        color: white;
-        font-family: map-get($styles, font-family);
-        text-decoration: map-get($styles, text-decoration);
-        font-weight: bold;
-    }
-    img{
-        width: 10rem;
-        border-radius: 40%;
-        padding: 25px;
-    }
+header {
+	width: 100%;
+	height: auto;
+	background: #09A680;
+	text-align: center;
+	a {
+		font-size: 20px;
+		color: white;
+		font-family: Arial;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	img {
+		@include widthpadding(10rem, 25px);
+		border-radius: 40%;
+	}
 }
 .menav {
 	a {
 		&:hover {
-			color: rgb(229, 226, 226);
+			color: #e5e2e2;
 		}
 	}
 }
 .list-group {
-	background-color: map-get($styles, background-color);
+	background-color: #09A680;
 }
 .hamburguer {
 	margin: 0 auto;
@@ -62,21 +57,20 @@ header{
 	width: 25rem;
 }
 #carrusel {
-    img {
-        width: map-get($styles, width);
-        height: auto;
-        max-height: 500px;
-    }
+	img {
+		width: 100%;
+		height: auto;
+		max-height: 500px;
+	}
 }
-#marcas{
-    background-color: #09a680 ;
-    img{
-        width: map-get($styles, width);
-        display: block;
-        margin: auto;
-        max-width: 300px;
-        padding:10px;
-    }
+#marcas {
+	background-color: #09a680;
+	img {
+		@include widthpadding(100%, 10px);
+		display: block;
+		margin: auto;
+		max-width: 300px;
+	}
 }
 #tit-section-a {
 	padding-top: 30px;
@@ -85,7 +79,7 @@ header{
 		font-size: 40px;
 		text-decoration: underline;
 		color: black;
-		font-family: map-get($styles, font-family);
+		font-family: Arial;
 		font-weight: bold;
 	}
 }
@@ -113,7 +107,7 @@ header{
 		font-size: 40px;
 		text-decoration: underline;
 		color: black;
-		font-family: map-get($styles, font-family);
+		font-family: Arial;
 		font-weight: bold;
 		padding-left: 5%;
 	}
@@ -124,7 +118,7 @@ header{
 	border: 2px solid #000000;
 	padding: 5px;
 	list-style-type: upper-roman;
-	text-decoration: map-get($styles, text-decoration);
+	text-decoration: none;
 	color: #000000;
 	border-radius: 5px;
 	&:hover {
@@ -137,24 +131,17 @@ header{
 		text-decoration: underline;
 	}
 	img {
-		width: 60%;
-		height: 50%;
-	}
-}
-#separacion {
-	col {
-		text-align: end;
+		@include widthpadding(95%, 1%);
 	}
 }
 .form__top {
-	width: map-get($styles, width);
+	@include widthpadding(100%, 2rem 0 1rem);
 	text-align: center;
-	padding: 2rem 0 1rem;
-	border-top: solid .4rem map-get($styles, background-color);
+	border-top: solid 0.4rem #09A680;
 	margin-bottom: 1rem;
 	h2 {
 		font-weight: bold;
-		font-family: map-get($styles, font-family);
+		font-family: Arial;
 		color: #CAC8C8;
 		font-size: 18px;
 	}
@@ -172,8 +159,8 @@ h2 {
 	a {
 		font-size: 20px;
 		color: #575757;
-		font-family: map-get($styles, font-family);
-		text-decoration: map-get($styles, text-decoration);
+		font-family: Arial;
+		text-decoration: none;
 		padding: 15px;
 		font-weight: bold;
 	}
@@ -195,25 +182,23 @@ h2 {
 	}
 }
 .button {
+	@include widthpadding(40%, .5rem);
 	background-color: #EFEFEF;
-	padding: .5rem;
 	margin: .5rem 0;
 	border: none;
 	border-bottom: solid #C8C8C8 2px;
 	transition: all .5s;
-	width: 40%;
 	border-bottom: none;
 	background-color: #6DCCAA;
 	color: white;
 }
 .btn__reset {
+	@include widthpadding(40%, .5rem);
 	background-color: #EFEFEF;
-	padding: .5rem;
 	margin: .5rem 0;
 	border: none;
 	border-bottom: solid #C8C8C8 2px;
 	transition: all .5s;
-	width: 40%;
 	border-bottom: none;
 	background-color: #6DCCAA;
 	color: white;
@@ -232,22 +217,21 @@ h2 {
 	border: 2px solid #d3d1d1;
 	height: 30px;
 	overflow: hidden;
-	width: map-get($styles, width);
+	width: 100%;
 	position: relative;
 	input {
 		border: 2px solid #d3d1d1;
 		height: 30px;
 		overflow: hidden;
-		width: map-get($styles, width);
+		width: 100%;
 		position: relative;
 	}
 }
 select {
+	@include widthpadding(100%, 5px);
 	border: none;
 	font-size: 14px;
 	height: 30px;
-	padding: 5px;
-	width: map-get($styles, width);
 	&:focus {
 		outline: none;
 	}
@@ -280,15 +264,15 @@ footer {
 		padding: 20px;
 		a {
 			font-size: 40px;
-			text-decoration: map-get($styles, text-decoration);
+			text-decoration: none;
 			color: #fff;
-			font-family: map-get($styles, font-family);
+			font-family: Arial;
 			font-weight: bold;
 		}
 		p {
-			text-decoration: map-get($styles, text-decoration);
+			text-decoration: none;
 			color: #fff;
-			font-family: map-get($styles, font-family);
+			font-family: Arial;
 			font-weight: bold;
 		}
 	}
@@ -296,8 +280,8 @@ footer {
 		text-align: center;
 		padding: 10px;
 		a {
-			text-decoration: map-get($styles, text-decoration);
-			font-family: map-get($styles, font-family);
+			text-decoration: none;
+			font-family: Arial;
 			color: #ffffff;
 			text-align: center;
 			padding: 10px;
@@ -319,6 +303,11 @@ footer {
 	align-items: center;
 	i {
 		color: #fff;
+	}
+}
+div {
+	#tit-detalle {
+		text-align: center;
 	}
 }
 #congbox {
@@ -380,24 +369,24 @@ footer {
 	h2 {
 		font-size: 40px;
 		color: black;
-		font-family: map-get($styles, font-family);
+		font-family: Arial;
 		font-weight: bold;
 	}
 }
 @media (max-width: 991px) {
 	.menav {
-		color: rgb(229, 226, 226);
+		color: #e5e2e2;
 		display: none;
 	}
 	.menuav {
 		a {
-			color: rgb(255, 255, 255);
+			color: white;
 		}
 	}
 }
 @media (min-width: 991px) {
 	.menuav {
-		color: rgb(229, 226, 226);
+		color: #e5e2e2;
 		display: none;
 	}
 }
@@ -407,6 +396,14 @@ footer {
 		float: none;
 		margin-bottom: 10px;
 		width: 20rem;
+	}
+	#congbox {
+		width: 60%;
+		align-content: center;
+		border-radius: 5px;
+		border: 2px solid #b3b3b3;
+		margin: 1% 20%;
+		text-align: center;
 	}
 }
 @media (max-width: 1330px) {
@@ -422,11 +419,7 @@ footer {
 		margin: 0 auto;
 		float: none;
 		margin-bottom: 10px;
-		width: 15rem;
-	}
-	#separacion1 {
-		padding: 30px 0px 30px 30px;
-		margin: 0% 0% 5% 0%;
+		width: 99%;
 	}
 }
 @media (max-width: 1400px) {
@@ -434,10 +427,26 @@ footer {
 		padding: 30px 0px 30px 30px;
 		margin: 0% 0% 2% 0%;
 	}
+	#congbox {
+		width: 80%;
+		align-content: center;
+		border-radius: 5px;
+		border: 2px solid #b3b3b3;
+		margin: 1% 10%;
+		text-align: center;
+	}
 }
 @media (max-width: 900px) {
 	#separacion1 {
 		padding: 30px 0px 30px 30px;
 		margin: 0% 0% 5% 0%;
+	}
+	#congbox {
+		width: 95%;
+		align-content: center;
+		border-radius: 5px;
+		border: 2px solid #b3b3b3;
+		margin: 1%;
+		text-align: center;
 	}
 }

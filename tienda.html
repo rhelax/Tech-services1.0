@@ -16,49 +16,50 @@
 <body>
     <header>
         <button id="boton-contacto" type="button" onclick="window.location.href='/contacto.html'">
-            <i class="fa-solid fa-address-book"></i> Contacto 
+            <i class="fa-solid fa-address-book"></i> Contacto
         </button>
         <a href="tel:32-837465">
             <button id="boton-telefono" type="button">
                 <i class="fas fa-phone"></i>
             </button>
-        </a>  
+        </a>
         <div class="row align-items-center start-lg middle-lg center-xs">
-                <div class="menav col-xs-12 col-lg-3">
-                    <img src="img/logo.png" alt="">
+            <div class="menav col-xs-12 col-lg-3">
+                <img src="img/logo.png" alt="Logo tech-service">
+            </div>
+            <div class="menav col-xs-12 col-lg-2">
+                <a href="index.html">INICIO</a>
+            </div>
+            <div class="menav col-xs-12 col-lg-2">
+                <a href="/index.html#tit-section-b">NOSOTROS</a>
+            </div>
+            <div class="menav col-xs-12 col-lg-2">
+                <a href="tienda.html">TIENDA</a>
+            </div>
+            <div class="menav col-xs-12 col-lg-2">
+                <a href="valoraciones.html">CALIFICACIONES</a>
+            </div>
+            <div class="menuav col-xs-4 col-lg-3">
+                <img src="img/logo.png" alt="Logo tech-service">
+            </div>
+            <div class="menuav col-xs-4 col-lg-3">
+                <p>
+                    <a class="hamburguer" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        <i class="fa-solid fa-align-justify fa-3x"></i>
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="index.html">INICIO</a></li>
+                            <li class="list-group-item"><a href="/index.html#tit-section-b">NOSOTROS</a></li>
+                            <li class="list-group-item"><a href="tienda.html">TIENDA</a></li>
+                            <li class="list-group-item"><a href="valoraciones.html">BLOG</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="menav col-xs-12 col-lg-2">  
-                    <a href="index.html">INICIO</a> 
-                </div>
-                <div class="menav col-xs-12 col-lg-2">
-                    <a href="/index.html#tit-section-b">NOSOTROS</a>
-                </div>
-                <div class="menav col-xs-12 col-lg-2">
-                    <a href="tienda.html">TIENDA</a>
-                </div>
-                <div class="menav col-xs-12 col-lg-2">
-                    <a href="valoraciones.html">BLOG</a>
-                </div> 
-                <div class="menuav col-xs-4 col-lg-3">
-                    <img src="img/logo.png" alt="">
-                </div>
-                <div class="menuav col-xs-4 col-lg-3">
-                    <p>
-                        <a class="hamburguer" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                            <i class="fa-solid fa-align-justify fa-3x"></i>
-                        </a>
-                        </p>
-                        <div class="collapse" id="collapseExample">
-                            <div class="card card-body">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><a href="index.html">INICIO</a></li>
-                                    <li class="list-group-item"><a href="/index.html#tit-section-b">NOSOTROS</a></li>
-                                    <li class="list-group-item"><a href="tienda.html">TIENDA</a></li>
-                                    <li class="list-group-item"><a href="valoraciones.html">BLOG</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                </div>
+            </div>
         </div>
     </header>
     <div id="titulo-tienda" class="row">
@@ -67,17 +68,17 @@
         </div>
         <div class="col-lg-2">
             <button id="boton-carrito" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-            aria-controls="offcanvasBottom">Carrito <i class="fa-solid fa-cart-arrow-down fa-2x"></i></button>
-    
+                aria-controls="offcanvasBottom">Carrito <i class="fa-solid fa-cart-arrow-down fa-2x"></i></button>
+
         </div>
     </div>
-   
+
     <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
         <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Carrito</h5>
-                    <a href="detalle.html">
-                        <button class="btn btn-primary" type="button">COMPRAR</button>
-                    </a>
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Carrito</h5>
+            <a href="detalle.html">
+                <button class="btn btn-primary" type="button">COMPRAR</button>
+            </a>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <hr>
@@ -101,7 +102,6 @@
             </table>
         </div>
     </div>
-
     <div class="row" id="cards"></div>
     <template id="template-footer">
         <th scope="row" colspan="2">Total Productos</th>
@@ -133,7 +133,7 @@
     <template id="template-card">
         <div class="col-6 mb-2 col-md-3">
             <div class="card">
-                <img src="" alt="" class="card-img-top">
+                <img src="" alt="Cotizaciones" class="card-img-top">
                 <div class="card-body">
                     <h4></h4>
                     <h5></h5>
@@ -173,7 +173,7 @@
         crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
     <script type="text/javascript">
-        function mensaje(){
+        function mensaje() {
             swal({
                 position: 'top-end',
                 icon: 'success',
